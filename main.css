@@ -22,6 +22,15 @@ main {
     box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
     display: flex;
 }
+@media screen and (max-width:768px) {
+    main {
+        flex-direction: column;
+        border-radius: 0rem;
+    }
+}
+@media screen and (max-width:768px) {
+    main > div { width: 375px }
+}
 main .result {
     border-radius: 2rem;
     background: linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
@@ -32,11 +41,23 @@ main .result {
     justify-content: center;
     align-items: center;
 }
+@media screen and (max-width:768px) {
+    main .result {
+        border-radius: 0rem 0rem 2rem 2rem;
+        padding: 1.5rem 57px 2.5rem;
+    }
+}
 main .result h1 {
     color: var(--Light-Blue, #CAC9FF);
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 2.1875rem;
+}
+@media screen and (max-width:768px) {
+    main .result h1 {
+        font-size: 1.125rem;
+        margin-bottom: 1.5rem;
+    }
 }
 main .result .circle {
     width: 12.5rem;
@@ -48,16 +69,34 @@ main .result .circle {
     align-items: center;
     justify-content: center;
     margin-bottom: 1.75rem;
+    /* margin: 0 auto 28px; */
+}
+@media screen and (max-width:768px) {
+    main .result .circle {
+        width: 8.75rem;
+        height: 8.75rem;
+        margin-bottom: 1.5rem;
+}
 }
 main .result .circle h2 {
     color: #FFF;
     font-size: 4.5rem;
     font-weight: 800;
 }
+@media screen and (max-width:768px) {
+    main .result .circle h2 {
+        font-size: 3.5rem;
+    }
+}
 main .result .circle span {
     color: #CAC9FF;
     font-size: 1.125rem;
     font-weight: 700;
+}
+@media screen and (max-width:768px) {
+    main .result .circle span {
+        font-size: 1rem;
+    }
 }
 main .result h3{
     color: #FFF;
@@ -65,20 +104,42 @@ main .result h3{
     font-weight: 700;
     margin-bottom: 0.875rem;
 }
+@media screen and (max-width:768px) {
+    main .result h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
 main .result p{
     color: #CAC9FF;
     font-size: 1.125rem;
     font-weight: 500;
     max-width: 16.25rem;
 }
+@media screen and (max-width:768px) {
+    main .result p {
+        font-size: 1rem;
+    }
+}
 main .details {
     padding: 2.375rem 2.5rem 2.875rem;
+}
+@media screen and (max-width:768px) {
+    main .details {
+        padding: 1.5rem 1.875rem 1.875rem;
+    }
 }
 main .details > p {
     color: #303B59;
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1.75rem;
+}
+@media screen and (max-width:768px) {
+    main .details > p {
+        font-size: 1.125rem;
+        margin-bottom: 1.5rem;
+    }
 }
 main .details .item {
     width: 18rem;
@@ -87,6 +148,12 @@ main .details .item {
     padding: 1rem;
     border-radius: 0.75rem;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #F55 
+}
+@media screen and (max-width:768px) {
+    main .details .item {
+        width: 100%;
+        height: 56px;
+    }
 }
 main .details .item:nth-of-type(2) { background: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #FFB21E }
 main .details .item:nth-of-type(3) { background: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00BB8F }
@@ -102,6 +169,12 @@ main .details .item .title p {
     font-weight: 500;
     margin-left: 1.75rem;
 }
+@media screen and (max-width:768px) {
+    main .details .item .title p {
+        font-size: 1rem;
+        margin-left: 0.75rem;
+    }
+}
 main .details .item:nth-of-type(2) .title p { color: #FFB21E }
 main .details .item:nth-of-type(3) .title p { color: #00BB8F }
 main .details .item:last-of-type .title p { color: #1125D6 }
@@ -109,6 +182,11 @@ main .details .item h4 {
     color: #303B59;
     font-size: 1.125rem;
     font-weight: 700;
+}
+@media screen and (max-width:768px) {
+    main .details .item h4 {
+        font-size: 1rem;
+    }
 }
 main .details .item h4 span {
     color: #303B59;
@@ -123,6 +201,12 @@ main .details button {
     border-radius: 8rem;
     background: #303B59;
     border: none;
+}
+@media screen and (max-width:768px) {
+    main .details button {
+        margin-top: 1.5rem;
+        padding: 1.0625rem 7.5rem;
+    }
 }
 main .details button:hover {
     background: linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
